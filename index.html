@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Blue Lion FC</title>
+   <style>
+       body {
+           font-family: Arial, sans-serif;
+           background-color: #f0f8ff;
+           color: #333;
+           margin: 0;
+           padding: 20px;
+       }
+       header {
+           background-color: #003366;
+           color: white;
+           padding: 20px;
+           text-align: center;
+       }
+       h1 {
+           margin: 0;
+       }
+       .logo-container {
+           margin-top: 10px;
+       }
+       .logo-container img {
+           width: 60px;
+           height: auto;
+       }
+       nav {
+           margin: 20px 0;
+       }
+       nav a {
+           margin: 0 15px;
+           color: #003366;
+           text-decoration: none;
+       }
+       .team-description,
+       .contact-info,
+       .schedule,
+       .news,
+       .history,
+       .training,
+       .achievements {
+           margin: 20px 0;
+           padding: 15px;
+           background-color: #e6f7ff;
+           border-radius: 5px;
+       }
+       .members {
+           list-style-type: none;
+           padding: 0;
+       }
+       .members li {
+           background-color: #cceeff;
+           margin: 5px 0;
+           padding: 10px;
+           border-radius: 5px;
+       }
+       .member-profile {
+           display: flex;
+           align-items: center;
+           margin: 10px 0;
+       }
+       .member-profile img {
+           border-radius: 50%;
+           width: 80px;
+           height: 80px;
+           margin-right: 15px;
+       }
+       .gallery {
+           display: flex;
+           flex-wrap: wrap;
+           gap: 10px;
+       }
+       .gallery img {
+           width: 200px;
+           height: 150px;
+           border-radius: 5px;
+       }
+       .schedule table {
+           width: 100%;
+           border-collapse: collapse;
+       }
+       .schedule th, .schedule td {
+           border: 1px solid #003366;
+           padding: 10px;
+           text-align: left;
+       }
+       .schedule th {
+           background-color: #cceeff;
+       }
+       footer {
+           margin-top: 20px;
+           text-align: center;
+           font-size: 0.9em;
+           padding: 10px;
+           background-color: #003366;
+           color: white;
+       }
+   </style>
+</head>
+<body>
+
+<header>
+   <h1>Blue Lion FC</h1>
+   <div class="logo-container">
+       <img src="bluelion.png" alt="Logo Blue Lion FC">
+   </div>
+   <nav>
+       <a href="#chi-siamo">Chi Siamo</a>
+       <a href="#membri">Membri</a>
+       <a href="#galleria">Galleria</a>
+       <a href="#programma">Programma</a>
+       <a href="#notizie">Notizie</a>
+       <a href="#storia">Storia</a>
+       <a href="#allenamenti">Allenamenti</a>
+       <a href="#contatti">Contatti</a>
+   </nav>
+</header>
+
+<section id="chi-siamo" class="team-description">
+   <h2>Chi Siamo</h2>
+   <p>La Blue Lion FC è una squadra amatoriale di calcio a 7/8/5. La nostra missione è divertirci, migliorare le nostre abilità e costruire una comunità di appassionati dello sport.</p>
+</section>
+
+<section id="membri">
+   <h2>Membri della Squadra</h2>
+   <ul class="members">
+       <li class="member-profile">
+           <img src="emanuel.jpg" alt="emanuel">
+           <div>
+               <strong>Pietro Emanuel Antinoro</strong> - Capitano<br>
+               Ruolo: Portiere
+           </div>
+       </li>
+       <li class="member-profile">
+           <img src="angelo.jpg" alt="angelo">
+           <div>
+               <strong>Angelo Mirisola</strong><br>
+               Ruolo: Difensore
+           </div>
+       </li>
+       <li class="member-profile">
+           <img src="stefano.jpg" alt="stefano">
+           <div>
+               <strong>Stefano Fascianella</strong><br>
+               Ruolo: Difensore
+           </div>
+       </li>
+       <li class="member-profile">
+           <img src="salvatore.jpg" alt="salvatore">
+           <div>
+               <strong>Salvatore Gentile</strong> - Vice Capitano<br>
+               Ruolo: Centrocampista
+           </div>
+       </li>
+       <li class="member-profile">
+           <img src="pierpaolo.jpg" alt="pierpaolo">
+           <div>
+               <strong>Pierpaolo Caramanna</strong><br>
+               Ruolo: Centrocampista
+           </div>
+       </li>
+       <li class="member-profile">
+           <img src="christian.jpg" alt="christian">
+           <div>
+               <strong>Christian Scarantino</strong><br>
+               Ruolo: Centrocampista
+           </div>
+       </li>
+       <li class="member-profile">
+           <img src="giuseppe.jpg" alt="giuseppe">
+           <div>
+               <strong>Giuseppe Urso</strong><br>
+               Ruolo: Attaccante
+           </div>
+       </li>
+       <li class="member-profile">
+           <img src="default.jpg" alt="Alessandro/Bryan"> <!-- Aggiungi immagine -->
+           <div>
+               <strong>Alessandro Sciandrù / Bryan Infantino</strong><br>
+               Ruolo: Attaccante
+           </div>
+       </li>
+   </ul>
+</section>
+
+<section id="galleria">
+   <h2>Galleria</h2>
+   <div class="gallery">
+       <img src="partita.jpg" alt="Partita in corso">
+       <img src="squadra.jpg" alt="Foto di gruppo">
+   </div>
+</section>
+
+<section id="programma" class="schedule">
+   <h2>Programma Partite</h2>
+   <table>
+       <thead>
+           <tr>
+               <th>Data</th>
+               <th>Avversario</th>
+	       <th>Risultato</th>
+               <th>Luogo</th>
+           </tr>
+       </thead>
+       <tbody>
+           <tr><td>27 Dicembre 2024</td><td>FC MAONZA</td><td>Vittoria</td><td>Campetti Giarratano</td></tr>
+           <tr><td>05 Gennaio 2025</td><td>VecchioStampo</td><td>Vittoria</td><td>Campetti Giarratano</td></tr>
+           <tr><td>17 Aprile 2025</td><td>FC MAONZA</td><td>Vittoria</td><td>Campetti Lombardo</td></tr>
+           <tr><td>15 Maggio 2025</td><td>Ludopatici</td><td>Vittoria</td><td>Oratorio di San Cataldo</td></tr>
+           <tr><td>20 Maggio 2025</td><td>Drogheda United FC</td><td>Pareggio</td><td>Oratorio di San Cataldo</td></tr>
+           <tr><td>24 Maggio 2025</td><td>Zeta Catallo</td><td>Sconfitta</td><td>Oratorio di San Cataldo</td></tr>
+           <tr><td>29 Luglio 2025</td><td>Real Cataldo</td><td>Sconfitta</td><td>Campetti Giarratano</td></tr>
+           <tr><td>4 Agosto 2025</td><td>--</td><td>--</td><td>Campetti Giarratano</td></tr>
+           <tr><td>9 Agosto 2025</td><td>--</td><td>--</td><td>Campetti Giarratano</td></tr>
+	   <tr><td>13 Agosto 2025</td><td>--</td><td>--</td><td>Campetti Giarratano</td></tr>
+           <tr><td>19 Agosto 2025</td><td>--</td><td>--</td><td>Campetti Giarratano</td></tr>
+           <tr><td>25 Agosto 2025</td><td>--</td><td>--</td><td>Campetti Giarratano</td></tr>
+       </tbody>
+   </table>
+</section>
+
+<section style="max-width: 400px; margin: 20px auto; padding: 20px; background: #ffffff; border-radius: 12px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); font-family: 'Segoe UI', sans-serif;">
+   <h3 style="text-align: center; color: #2c3e50; margin-bottom: 16px;">Percentuale Partite</h3>
+   <ul style="list-style: none; padding: 0; font-size: 16px; line-height: 1.6;">
+       <li><strong style="color: #27ae60;">Vittorie:</strong> 57,14%</li>
+       <li><strong style="color: #f39c12;">Pareggi:</strong> 14,29%</li>
+       <li><strong style="color: #c0392b;">Sconfitte:</strong> 28,57%</li>
+   </ul>
+</section>
+
+<section id="notizie" class="news">
+   <h2>Ultime Notizie</h2>
+   <article>
+       <h3>SCONFITTA CONTRO LA SQUADRA REAL CATALDO (6-5)</h3>
+       <p>Purtroppo scarsa prestazione, la squadra ha perso con un gol di scarto. Forza Blue Lion!</p>
+   </article>
+</section>
+
+<section id="contatti" class="contact-info">
+   <h2>Contatti</h2>
+   <p>Scrivici per collaborazioni o per entrare nella squadra!</p>
+   <p><strong>Email:</strong> squadrabluelion@gmail.com</p>
+</section>
+
+<footer>
+   <p>&copy; 2024 Blue Lion FC. Tutti i diritti riservati.</p>
+</footer>
+
+</body>
+</html>
